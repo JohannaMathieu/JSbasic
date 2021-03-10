@@ -42,3 +42,8 @@ for (i = 0; i < animalImg.length; i++) {
         animalImg[i].remove();
     };
 };
+
+//adding another box to bannerBox and giving it a class
+const box = document.createElement("div");
+box.classList.add("box");
+bannerBox.appendChild(box);
