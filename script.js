@@ -33,3 +33,12 @@ newBanner.src = "https://cdn.pixabay.com/photo/2015/09/01/09/32/alphabet-916673_
 
 const bannerBox = document.querySelector(".bannerBox");
 bannerBox.appendChild(newBanner);
+
+//getting the animals and deleting the cats
+const animalImg = document.querySelectorAll(".animals > img");
+
+for (i = 0; i < animalImg.length; i++) {
+    if (animalImg[i].className == "img-cat") {
+        animalImg[i].remove();
+    };
+};
