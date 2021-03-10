@@ -47,3 +47,29 @@ for (i = 0; i < animalImg.length; i++) {
 const box = document.createElement("div");
 box.classList.add("box");
 bannerBox.appendChild(box);
+
+box.onmousedown = function () {
+    box.style.width = "200px";
+    box.style.backgroundColor = "red";
+};
+
+box.addEventListener("mouseup", function () {
+    box.style.width = "50px";
+    box.style.backgroundColor = "blue";
+});
+
+//create a todo list with user input
+const form = document.querySelector("form");
+const task = document.querySelector("#task");
+const todoList = document.querySelector(".todoList");
+let todo;
+let todoText;
+
+form.onsubmit = function () {
+    event.preventDefault();
+    todoText = task.value;
+    todo = document.createElement("li");
+    todo.innerHTML = todoText;
+    todoList.appendChild(todo);
+    task.value = "";
+};
