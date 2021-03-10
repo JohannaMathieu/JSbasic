@@ -25,3 +25,11 @@ const myImages = document.querySelectorAll("img");
 for (i = 0; i < picArray.length; i++) {
     myImages[i].src = picArray[i];
 }
+
+//adding an img to bannerBox
+const newBanner = document.createElement("img");
+newBanner.src = "https://cdn.pixabay.com/photo/2015/09/01/09/32/alphabet-916673__480.jpg";
+
+
+const bannerBox = document.querySelector(".bannerBox");
+bannerBox.appendChild(newBanner);

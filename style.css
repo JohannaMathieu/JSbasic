@@ -2,3 +2,8 @@ img {
     width: 300px;
     height: auto;
 }
+
+.bannerBox img {
+    width: 100%;
+    height: auto;
+}
