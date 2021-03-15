@@ -73,3 +73,15 @@ form.onsubmit = function () {
     todoList.appendChild(todo);
     task.value = "";
 };
+
+const apple = {
+    color: "#00FF00",
+    diameter: 10,
+    isEaten: false,
+    vitamins: ["A", "B1", "B2", "B6", "C"],
+    variety: { code: 576, name: "Granny Smith" },
+    gather: function () {
+        return "Here's one apple!";
+
+    }
+}
